@@ -13,4 +13,7 @@ export class ScreenshotWeb extends WebPlugin implements ScreenshotPlugin {
       });
     });
   }
+  async takeO(): Promise<{ base64: string }> {
+    return await this.take();
+  }
 }
